@@ -2,7 +2,7 @@ var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
 
 let auth_error =(req, res, next)=>{
-  // TODO: check jwt before routes  
+  console.log(req)
   next()
 }
 module.exports=auth_error
